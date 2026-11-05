@@ -4,11 +4,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.2.0/opencv_inspection_code.zip)**
+**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.3.0/opencv_inspection_code.zip)**
 
-- 最新の教材：v2.2.0（2026年11月4日）
+- 最新の教材：v2.3.0（2026年11月5日）
 - ファイル名：`opencv_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.2.0)
+- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.3.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`opencv_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」と「Source code (tar.gz)」には、実習用の写真やコード一式は入っていません。
 
@@ -26,12 +26,19 @@ ZIPを展開し、`inspection.py`、`config.json`、`requirements.txt`、`sample
 | 第5章：USBカメラで撮って判定する実習7 | `lessons/07_camera.py` |
 | キズ・異物、個数、幅、位置ずれ、色、QRコードの検査 | `inspection.py`、`config.json`、`samples` |
 | 第7章：縦の筋を列の中央値・平均で消す比較 | `streak_experiment.py` |
+| 第9章：黒地の白い点を数えて上限で判定する比較 | `speck_count_experiment.py` |
 | 第15章：保存した結果をHTMLの一覧にする | `report_html.py` |
 | 第20章：実写基板による失敗・改善・評価（三回の改善ラウンド） | `real_case` |
 | 27ケースの一括検証と43の自動試験 | `verify.py`、`tests` |
 | 書き込み式の帳票 | `templates` |
 
 第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。書籍本文のEPUB・PDFは配布物に含みません。
+
+## v2.3.0の変更点
+
+- 追加：`speck_count_experiment.py`（第9章の白い点の比較。合成画像）
+- 追加：`tests/test_speck_count.py`（自動試験は47件）
+- 更新：`README.md`（実行方法を追加）
 
 ## v2.2.0の変更点
 
