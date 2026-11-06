@@ -4,11 +4,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.4.0/opencv_inspection_code.zip)**
+**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.5.0/opencv_inspection_code.zip)**
 
-- 最新の教材：v2.4.0（2026年11月6日）
+- 最新の教材：v2.5.0（2026年11月6日）
 - ファイル名：`opencv_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.4.0)
+- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.5.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`opencv_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」と「Source code (tar.gz)」には、実習用の写真やコード一式は入っていません。
 
@@ -28,12 +28,19 @@ ZIPを展開し、`inspection.py`、`config.json`、`requirements.txt`、`sample
 | 第7章：縦の筋を列の中央値・平均で消す比較 | `streak_experiment.py` |
 | 第7章：ヘアラインのある面でシェーディング補正の方法を比べる | `hairline_experiment.py` |
 | 第9章：黒地の白い点を数えて上限で判定する比較 | `speck_count_experiment.py` |
+| 第11章：色の違う部品を一つのマスタで有無検査する比較 | `part_presence_experiment.py` |
 | 第15章：保存した結果をHTMLの一覧にする | `report_html.py` |
 | 第20章：実写基板による失敗・改善・評価（三回の改善ラウンド） | `real_case` |
-| 27ケースの一括検証と51の自動試験 | `verify.py`、`tests` |
+| 27ケースの一括検証と55の自動試験 | `verify.py`、`tests` |
 | 書き込み式の帳票 | `templates` |
 
 第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。書籍本文のEPUB・PDFは配布物に含みません。
+
+## v2.5.0の変更点
+
+- 追加：`part_presence_experiment.py`（第11章の色違い部品の有無検査の比較。合成画像）
+- 追加：`tests/test_part_presence.py`（自動試験は55件）
+- 更新：`README.md`（実行方法を追加）
 
 ## v2.4.0の変更点
 
