@@ -2,6 +2,17 @@
 
 西城戸 亮 著『現場で使える製造業の画像検査自動化：Python／OpenCVで作る実践サンプルと運用ノウハウ』第2版の実習用ファイルです。Pythonの基本操作を理解した読者を対象にしています。
 
+## 書籍（Amazon）
+
+この教材の本：[『現場で使える製造業の画像検査自動化 第2版』](https://www.amazon.co.jp/dp/B0HJYJNHS6)（Kindle版・ペーパーバック、Kindle Unlimited対象）
+
+著者の他の本（製造業の技術書）：
+
+- [『ラズパイとPythonでつくる 製造業の画像検査』](https://www.amazon.co.jp/dp/B0HKSGDZF2)：カメラ接続からOK／NG判定、記録・運用まで
+- [『図解で学ぶ PLCプログラミング入門』](https://www.amazon.co.jp/dp/B0HMPS4P4M)：ラダーの基本から搬送・位置決め・PID・通信まで
+- [『Claude Codeでつくる 製造業の画像検査システム』](https://www.amazon.co.jp/dp/B0HKSG1LWF)：AIに書かせたコードを、テストと実測で確かめる
+- [『Pythonで始める 製造DXの実践』](https://www.amazon.co.jp/dp/B0HL5RK5H9)：現場データの収集・見える化から、管理図・異常検知まで
+
 ## 教材ZIPをダウンロードする
 
 **[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.5.0/opencv_inspection_code.zip)**
