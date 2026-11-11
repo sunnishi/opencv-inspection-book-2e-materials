@@ -15,11 +15,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.5.0/opencv_inspection_code.zip)**
+**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.6.0/opencv_inspection_code.zip)**
 
-- 最新の教材：v2.5.0（2026年11月6日）
+- 最新の教材：v2.6.0（2026年11月11日）
 - ファイル名：`opencv_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.5.0)
+- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.6.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`opencv_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」と「Source code (tar.gz)」には、実習用の写真やコード一式は入っていません。
 
@@ -42,10 +42,17 @@ ZIPを展開し、`inspection.py`、`config.json`、`requirements.txt`、`sample
 | 第11章：色の違う部品を一つのマスタで有無検査する比較 | `part_presence_experiment.py` |
 | 第15章：保存した結果をHTMLの一覧にする | `report_html.py` |
 | 第20章：実写基板による失敗・改善・評価（三回の改善ラウンド） | `real_case` |
+| 第21章と第1・4・6・7・8章の節「実写で確かめる」：木材と半導体の公開データで材質による違いを比べる | `materials_case` |
 | 27ケースの一括検証と55の自動試験 | `verify.py`、`tests` |
 | 書き込み式の帳票 | `templates` |
 
-第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。書籍本文のEPUB・PDFは配布物に含みません。
+第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。第21章の木材・半導体の画像は、利用条件と容量の都合でZIPに含めていません。`materials_case/README.md`の手順で配布元から取得します（木材は約620 MB、半導体は約140 MB）。書籍本文のEPUB・PDFは配布物に含みません。
+
+## v2.6.0の変更点
+
+- 追加：`materials_case/`（第21章と、第1・4・6・7・8章の節「実写で確かめる」。木材はKodytek, Bodzas, Bilik（2021）、半導体はKofler, Hasić（2025）のCarinthia-S、どちらもCC BY 4.0）
+- 画像は同梱せず、取得用の`fetch_wood.py`と、取得位置・照合値の`selection_wood.json`を収録
+- これまでの検査コード、実写事例、27ケースの検証、55件の自動試験は変わりません
 
 ## v2.5.0の変更点
 
