@@ -15,11 +15,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.6.0/opencv_inspection_code.zip)**
+**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.7.0/opencv_inspection_code.zip)**
 
-- 最新の教材：v2.6.0（2026年11月11日）
+- 最新の教材：v2.7.0（2026年11月15日）
 - ファイル名：`opencv_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.6.0)
+- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.7.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`opencv_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」と「Source code (tar.gz)」には、実習用の写真やコード一式は入っていません。
 
@@ -43,10 +43,19 @@ ZIPを展開し、`inspection.py`、`config.json`、`requirements.txt`、`sample
 | 第15章：保存した結果をHTMLの一覧にする | `report_html.py` |
 | 第20章：実写基板による失敗・改善・評価（三回の改善ラウンド） | `real_case` |
 | 第21章と第1・4・6・7・8章の節「実写で確かめる」：木材と半導体の公開データで材質による違いを比べる | `materials_case` |
+| 第22章：作業者が間違えない検査画面（運転・履歴・設定の確認） | `screen` |
 | 27ケースの一括検証と55の自動試験 | `verify.py`、`tests` |
 | 書き込み式の帳票 | `templates` |
 
 第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。第21章の木材・半導体の画像は、利用条件と容量の都合でZIPに含めていません。`materials_case/README.md`の手順で配布元から取得します（木材は約620 MB、半導体は約140 MB）。書籍本文のEPUB・PDFは配布物に含みません。
+
+## v2.7.0の変更点
+
+- 追加：`screen/inspection_screen.py`（第22章の検査画面。Tkinterで、運転・NGと保留の履歴・設定の確認の三つの画面。判定と保存は`inspection.py`が行う）
+- 追加：`screen/screen_before.py`（直す前の画面の例）、`tests/test_screen.py`
+- 実行例：`python screen/inspection_screen.py --mode surface --images samples --output screen_results`
+- macOSで確認しました。WindowsとLinuxでは動かしていません
+- これまでの検査コード、実写事例、27ケースの検証は変わりません（自動試験は58件）
 
 ## v2.6.0の変更点
 
