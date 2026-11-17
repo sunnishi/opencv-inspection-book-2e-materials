@@ -15,11 +15,11 @@
 
 ## 教材ZIPをダウンロードする
 
-**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.7.0/opencv_inspection_code.zip)**
+**[教材ZIPをダウンロード（約218 MB）](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/download/v2.8.0/opencv_inspection_code.zip)**
 
-- 最新の教材：v2.7.0（2026年11月15日）
+- 最新の教材：v2.8.0（2026年11月17日）
 - ファイル名：`opencv_inspection_code.zip`
-- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.7.0)
+- [この版の配布ページ](https://github.com/sunnishi/opencv-inspection-book-2e-materials/releases/tag/v2.8.0)
 
 ダウンロードにGitHubアカウントは不要です。配布ページの「Assets」から取得する場合は、`opencv_inspection_code.zip`を選んでください。自動表示される「Source code (zip)」と「Source code (tar.gz)」には、実習用の写真やコード一式は入っていません。
 
@@ -44,10 +44,19 @@ ZIPを展開し、`inspection.py`、`config.json`、`requirements.txt`、`sample
 | 第20章：実写基板による失敗・改善・評価（三回の改善ラウンド） | `real_case` |
 | 第21章と第1・4・6・7・8章の節「実写で確かめる」：木材と半導体の公開データで材質による違いを比べる | `materials_case` |
 | 第22章：作業者が間違えない検査画面（運転・履歴・設定の確認） | `screen` |
+| 第23章：YOLOで部品を見つけ、数えて判定する（合成画像で従来手法と比べる） | `yolo_case` |
 | 27ケースの一括検証と55の自動試験 | `verify.py`、`tests` |
 | 書き込み式の帳票 | `templates` |
 
 第20章の実写写真160枚、分割表、固定済み設定・モデル、制作時の保存結果もZIPに収録しています。第21章の木材・半導体の画像は、利用条件と容量の都合でZIPに含めていません。`materials_case/README.md`の手順で配布元から取得します（木材は約620 MB、半導体は約140 MB）。書籍本文のEPUB・PDFは配布物に含みません。
+
+## v2.8.0の変更点
+
+- 追加：`yolo_case/`（第23章。トレーのボルト・ナット・ワッシャーの員数を、従来手法とYOLOで比べる。合成画像を作る・学習する・判定を比べる・外径を比べるの4つのプログラムと、筆者の実行結果）
+- 追加：`requirements-yolo.txt`（第23章だけで使う。Ultralytics 8.4.123とPyTorch）
+- 使っているUltralyticsのライブラリとYOLO11nの重みはAGPL-3.0です。製品に組み込む前にライセンスを確認してください
+- 画像（約120 MB）と学習した重みはZIPに入れていません。`yolo_case/README.md`の手順で作り直せます。学習は筆者のApple M1で約45分でした
+- これまでの検査コード、実写事例、27ケースの検証は変わりません（自動試験は58件）
 
 ## v2.7.0の変更点
 
